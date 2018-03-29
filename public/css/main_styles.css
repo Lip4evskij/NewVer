@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700,800&subset=cyrillic");
+
+body {
+    background: #f4f4f4;
+    font-family: "Lora", serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: #121212
+}
+
+.site-header {
+    width: 100%;
+    height: 80px;
+    background: #f7f7f7;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25)
+}
+
+.site-header .logo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 80px;
+    font-weight: 800;
+    float: left
+}
+
+.site-header .header-menu {
+    float: right
+}
+
+.site-header .header-menu li {
+    float: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.site-header .header-menu li a {
+    color: #304269;
+    padding: 0 15px;
+    display: block
+}
+
+.site-header .header-menu li a:hover {
+    color: #F26101
+}

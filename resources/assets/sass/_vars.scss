@@ -1,0 +1,25 @@
+$dark: #304269;
+$blue: #91BED4;
+$grey: #f7f7f7;
+$orange: #F26101;
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700,800&subset=cyrillic');
+
+$heading_font: 'Open Sans', sans-serif;
+$body_font: 'Lora', serif;
+
+// PT to REM
+$font_size_basic: 16px;
+
+// Конвертация PX в REM
+@function calculateRem($size) {
+  $remSize: $size / $font_size_basic;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

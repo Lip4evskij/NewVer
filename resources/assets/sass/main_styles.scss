@@ -1,0 +1,49 @@
+@import "vars";
+
+
+body{
+  background: #f4f4f4;
+  font-family: $body_font;
+  @include fontSize(18px);
+  line-height: 1.4;
+  color: #121212;
+}
+
+
+// Header
+.site-header{
+  width: 100%;
+  height: 80px;
+  background: $grey;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+
+  .logo{
+    font-family: $heading_font;
+    @include fontSize(24px);
+    line-height: 80px;
+    font-weight: 800;
+    float: left;
+  }
+
+  .header-menu{
+    float: right;
+
+    li{
+      float: left;
+      font-family: $heading_font;
+      @include fontSize(14px);
+      line-height: 80px;
+      font-weight: 700;
+      text-transform: uppercase;
+      a{
+        color: $dark;
+        padding: 0 15px;
+        display: block;
+        &:hover{
+          color: $orange;
+        }
+      }
+    }
+  }
+
+}
